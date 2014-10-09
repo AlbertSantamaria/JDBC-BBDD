@@ -12,8 +12,8 @@ public class StudentDaoImpl implements StudentDao {
 	private Connection connect;
 
 	// Querys
-	private String SQL_DELETE = "DELETE FROM student WHERE name = ?";
-	private String SQL_GET = "SELECT NAME FROM student,RelacionStudentClass,Class where name = relname and numclass=renumclass and prof = ?";
+	private String SQL_DELETE = "DELETE FROM Student WHERE name = ?";
+	private String SQL_GET = "SELECT NAME FROM Student,RelacionStudentClass,Class where name = relname and numclass=renumclass and prof = ?";
 
 	// Constructor donde se recupera la conexión a BBDD
 
